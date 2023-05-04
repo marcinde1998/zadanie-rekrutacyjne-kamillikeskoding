@@ -1,0 +1,73 @@
+.mainNav {
+
+    .navBarPortfolio {
+        font-size: 0;
+        background: linear-gradient(89.82deg, #1D4534 42.15%, #01DD81 100.83%);
+        transform: rotate(-180deg);
+        position: relative;
+        text-align: center;
+        height: 46px;
+
+        ul {
+            margin: 0;
+            list-style-type: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+
+            li {
+                transform: rotate(180deg);
+
+                a {
+                    text-decoration: none;
+                    font-family: SofiaOne;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #DFDFDE;
+
+                    span {
+                        color: #00DC81;
+                    }
+                }
+            }
+        }
+    }
+
+    .navBar {
+        font-size: 0;
+        background: #292B2A;
+        height: 96px;
+        display: flex;
+        border-bottom: 1px solid #3B3F3D;
+
+        div {
+            display: flex;
+            margin: auto;
+            width: 300px;
+            margin-left: 15%;
+
+            ul {
+                margin: auto;
+                list-style-type: none;
+
+                li {
+
+                    a {
+                        text-decoration: none;
+                        font-family: SofiaOne;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 25px;
+                        color: #FBFBFB;
+
+                    }
+                }
+            }
+        }
+    }
+}

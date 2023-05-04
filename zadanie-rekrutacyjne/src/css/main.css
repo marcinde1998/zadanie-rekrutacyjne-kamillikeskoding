@@ -1,0 +1,68 @@
+.mainNav .navBarPortfolio {
+  font-size: 0;
+  background: linear-gradient(89.82deg, #1D4534 42.15%, #01DD81 100.83%);
+  transform: rotate(-180deg);
+  position: relative;
+  text-align: center;
+  height: 46px;
+}
+.mainNav .navBarPortfolio ul {
+  margin: 0;
+  list-style-type: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.mainNav .navBarPortfolio ul li {
+  transform: rotate(180deg);
+}
+.mainNav .navBarPortfolio ul li a {
+  text-decoration: none;
+  font-family: SofiaOne;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #DFDFDE;
+}
+.mainNav .navBarPortfolio ul li a span {
+  color: #00DC81;
+}
+.mainNav .navBar {
+  font-size: 0;
+  background: #292B2A;
+  height: 96px;
+  display: flex;
+  border-bottom: 1px solid #3B3F3D;
+}
+.mainNav .navBar div {
+  display: flex;
+  margin: auto;
+  width: 300px;
+  margin-left: 15%;
+}
+.mainNav .navBar div ul {
+  margin: auto;
+  list-style-type: none;
+}
+.mainNav .navBar div ul li a {
+  text-decoration: none;
+  font-family: SofiaOne;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: #FBFBFB;
+}
+
+body {
+  background-color: #1E1E1E;
+  margin: auto;
+}
+
+@font-face {
+  font-family: SofiaOne;
+  src: url(../css/SofiaSansSemiCondensed-VariableFont_wght.ttf);
+}/*# sourceMappingURL=main.css.map */
