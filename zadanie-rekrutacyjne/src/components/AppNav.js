@@ -58,9 +58,20 @@ const AppNav = () => {
 
                                     {isHovering && (
                                         <div className="fixedServices">
-                                            <h2>Only visible when hovering div</h2>
-                                            <h2>bobbyhadz.com</h2>
+                                        <div className="box">
+                                            <div className="boxtext2">UX Design</div>
+                                            <div className="boxtext1">Contrary to popular belief, Lorem Ipsum is not simply random text.</div>
                                         </div>
+                                        <div className="box"> 
+                                            <div className="boxtext2">Graphic Design</div>
+                                            <div className="boxtext1">Contrary to popular belief, Lorem Ipsum is not simply random text.</div>
+                                        </div>
+                                        <div className="box"> 
+                                            <div className="boxtext2">Ecommerce</div>
+                                            <div className="boxtext1">Contrary to popular belief, Lorem Ipsum is not simply random text.</div>
+                                        </div>
+                                        <Link className="boxtext3">View all <span>&#129122;</span></Link>
+                                    </div>
                                     )}
                                 </div>
                             </div>

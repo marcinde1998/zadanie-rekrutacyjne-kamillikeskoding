@@ -103,9 +103,51 @@
 }
 .mainNav .navBar .fixedServices {
   position: fixed;
+  width: 855px;
+  height: 271px;
   background-color: #DFDFDE;
-  top: 50%;
-  left: 50%;
+  top: 10%;
+  left: 10%;
+  background: #292A2A;
+  box-shadow: 0px 2px 12px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+.mainNav .navBar .fixedServices .boxtext3 {
+  text-decoration: none;
+  font-family: "sofia-pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #00DC81;
+  margin-top: 21%;
+  position: relative;
+  left: -29%;
+}
+.mainNav .navBar .fixedServices .box {
+  width: 304px;
+  height: 143px;
+  display: inline;
+}
+.mainNav .navBar .fixedServices .box .boxtext1 {
+  font-family: "sofia-pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #9C9C9C;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.mainNav .navBar .fixedServices .box .boxtext2 {
+  font-family: "sofia-pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+  justify-content: center;
+  position: relative;
 }
 .mainNav .navBar div {
   display: flex;
@@ -132,17 +174,17 @@
   border-width: 0 1.5px 1.5px 0;
   display: inline-block;
   position: absolute;
-  padding: 3px;
+  padding: 2px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  top: 20%;
-  left: 29%;
+  top: 25%;
+  left: 35%;
 }
 .mainNav .navBar div ul li div .dot:hover .arrow:hover {
   border: solid #00DB7B;
   border-width: 0 1.5px 1.5px 0;
   display: inline-block;
-  padding: 3px;
+  padding: 2px;
   transform: rotate(-135deg);
   top: 40%;
 }
