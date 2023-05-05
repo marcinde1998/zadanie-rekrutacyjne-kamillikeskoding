@@ -1,3 +1,7 @@
+@import url("https://p.typekit.net/p.css?s=1&k=gze2nel&ht=tk&f=24543.24545.24549&a=38439520&app=typekit&e=css");
+.mainNav {
+  border-bottom: 1px solid #3B3F3D;
+}
 .mainNav .navBarPortfolio {
   font-size: 0;
   background: linear-gradient(89.82deg, #1D4534 42.15%, #01DD81 100.83%);
@@ -20,7 +24,7 @@
 }
 .mainNav .navBarPortfolio ul li a {
   text-decoration: none;
-  font-family: SofiaOne;
+  font-family: "sofia-pro";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -31,25 +35,120 @@
   color: #00DC81;
 }
 .mainNav .navBar {
-  font-size: 0;
-  background: #292B2A;
-  height: 96px;
   display: flex;
-  border-bottom: 1px solid #3B3F3D;
+  width: 500px;
+  margin-left: 10%;
+  height: 96px;
+}
+.mainNav .navBar .fixedPortfolio {
+  position: fixed;
+  width: 855px;
+  height: 271px;
+  background-color: #DFDFDE;
+  top: 10%;
+  left: 10%;
+  background: #292A2A;
+  box-shadow: 0px 2px 12px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+.mainNav .navBar .fixedPortfolio .boxtext3 {
+  text-decoration: none;
+  font-family: "sofia-pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #00DC81;
+  margin-top: 22%;
+}
+.mainNav .navBar .fixedPortfolio .box {
+  width: 304px;
+  height: 143px;
+  display: inline;
+  border: 1px solid #3B3F3D;
+  border-radius: 8px;
+}
+.mainNav .navBar .fixedPortfolio .box .boxtext1 {
+  font-family: "sofia-pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #9C9C9C;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.mainNav .navBar .fixedPortfolio .box .boxtext2 {
+  font-family: "sofia-pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 19px;
+  color: #FFFFFF;
+  justify-content: center;
+  position: relative;
+  top: 15%;
+}
+.mainNav .navBar .fixedPortfolio .box a {
+  text-decoration: none;
+  font-family: "sofia-pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #00DC81;
+  position: relative;
+  top: 30%;
+  left: 60%;
+}
+.mainNav .navBar .fixedServices {
+  position: fixed;
+  background-color: #DFDFDE;
+  top: 50%;
+  left: 50%;
 }
 .mainNav .navBar div {
   display: flex;
   margin: auto;
-  width: 300px;
-  margin-left: 15%;
 }
 .mainNav .navBar div ul {
   margin: auto;
   list-style-type: none;
 }
+.mainNav .navBar div ul li {
+  display: flex;
+}
+.mainNav .navBar div ul li div .dot {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1.5px solid #E3E3E3;
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
+}
+.mainNav .navBar div ul li div .dot .arrow {
+  border: solid #FBFBFB;
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
+  position: absolute;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  top: 20%;
+  left: 29%;
+}
+.mainNav .navBar div ul li div .dot:hover .arrow:hover {
+  border: solid #00DB7B;
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+  top: 40%;
+}
 .mainNav .navBar div ul li a {
   text-decoration: none;
-  font-family: SofiaOne;
+  font-family: "sofia-pro";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -58,11 +157,31 @@
 }
 
 body {
-  background-color: #1E1E1E;
+  background-color: #292B2A;
   margin: auto;
 }
 
 @font-face {
-  font-family: SofiaOne;
-  src: url(../css/SofiaSansSemiCondensed-VariableFont_wght.ttf);
+  font-family: "sofia-pro";
+  src: url("https://use.typekit.net/af/2e2409/00000000000000007735f990/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n3&v=3") format("woff2"), url("https://use.typekit.net/af/2e2409/00000000000000007735f990/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n3&v=3") format("woff"), url("https://use.typekit.net/af/2e2409/00000000000000007735f990/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n3&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "sofia-pro";
+  src: url("https://use.typekit.net/af/19ced7/00000000000000007735f992/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n5&v=3") format("woff2"), url("https://use.typekit.net/af/19ced7/00000000000000007735f992/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n5&v=3") format("woff"), url("https://use.typekit.net/af/19ced7/00000000000000007735f992/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n5&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "sofia-pro";
+  src: url("https://use.typekit.net/af/262452/00000000000000007735f99a/30/l?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n6&v=3") format("woff2"), url("https://use.typekit.net/af/262452/00000000000000007735f99a/30/d?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n6&v=3") format("woff"), url("https://use.typekit.net/af/262452/00000000000000007735f99a/30/a?primer=f592e0a4b9356877842506ce344308576437e4f677d7c9b78ca2162e6cad991a&fvd=n6&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
 }/*# sourceMappingURL=main.css.map */
