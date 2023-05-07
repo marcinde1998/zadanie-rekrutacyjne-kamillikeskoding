@@ -40,6 +40,9 @@
   margin-left: 10%;
   height: 96px;
 }
+.mainNav .navBar div .clickedEvent:active {
+  background-color: #00DB7B;
+}
 .mainNav .navBar .fixedPortfolio {
   position: fixed;
   width: 855px;
@@ -78,16 +81,9 @@
   margin-left: 20px;
   margin-top: 20px;
 }
-.mainNav .navBar .fixedPortfolio .box .boxtext2 {
-  font-family: "sofia-pro";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 19px;
-  color: #FFFFFF;
-  justify-content: center;
-  position: relative;
-  top: 15%;
+.mainNav .navBar .fixedPortfolio .box .boximg {
+  margin-left: 30%;
+  margin-top: 7%;
 }
 .mainNav .navBar .fixedPortfolio .box a {
   text-decoration: none;
@@ -97,9 +93,14 @@
   font-size: 14px;
   line-height: 22px;
   color: #00DC81;
-  position: relative;
-  top: 30%;
-  left: 60%;
+  position: fixed;
+  top: 22.5%;
+}
+.mainNav .navBar .fixedPortfolio .box .showmoreone {
+  left: 22%;
+}
+.mainNav .navBar .fixedPortfolio .box .showmoretwo {
+  left: 43%;
 }
 .mainNav .navBar .fixedServices {
   position: fixed;
@@ -122,10 +123,10 @@
   color: #00DC81;
   margin-top: 21%;
   position: relative;
-  left: -29%;
+  left: -25%;
 }
 .mainNav .navBar .fixedServices .box {
-  width: 304px;
+  width: 204px;
   height: 143px;
   display: inline;
 }
@@ -149,6 +150,9 @@
   justify-content: center;
   position: relative;
 }
+.mainNav .navBar .fixedServices .box .boxtext2 img {
+  margin-right: 10px;
+}
 .mainNav .navBar div {
   display: flex;
   margin: auto;
@@ -160,7 +164,7 @@
 .mainNav .navBar div ul li {
   display: flex;
 }
-.mainNav .navBar div ul li div .dot {
+.mainNav .navBar div ul li .dot {
   height: 20px;
   width: 20px;
   border-radius: 50%;
@@ -169,7 +173,7 @@
   position: relative;
   margin-left: 10px;
 }
-.mainNav .navBar div ul li div .dot .arrow {
+.mainNav .navBar div ul li .arrow {
   border: solid #FBFBFB;
   border-width: 0 1.5px 1.5px 0;
   display: inline-block;
@@ -177,16 +181,8 @@
   padding: 2px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  top: 25%;
+  top: 30%;
   left: 35%;
-}
-.mainNav .navBar div ul li div .dot:hover .arrow:hover {
-  border: solid #00DB7B;
-  border-width: 0 1.5px 1.5px 0;
-  display: inline-block;
-  padding: 2px;
-  transform: rotate(-135deg);
-  top: 40%;
 }
 .mainNav .navBar div ul li a {
   text-decoration: none;
@@ -196,6 +192,20 @@
   font-size: 16px;
   line-height: 25px;
   color: #FBFBFB;
+}
+.mainNav .navBar div .hoverEvent:hover a {
+  color: #00DB7B;
+}
+.mainNav .navBar div .hoverEvent:hover div div .dot .arrow {
+  border: solid #00DB7B;
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
+  position: absolute;
+  padding: 2px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(225deg);
+  top: 40%;
+  left: 35%;
 }
 
 body {

@@ -44,6 +44,9 @@
         margin-left: 10%;
         height: 96px;
 
+        div .clickedEvent:active  {
+            background-color: #00DB7B;
+        }
 
         .fixedPortfolio {
             position: fixed;
@@ -85,17 +88,9 @@
                     margin-top: 20px;
                 }
 
-                .boxtext2 {
-                    font-family: 'sofia-pro';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 25px;
-                    line-height: 19px;
-                    color: #FFFFFF;
-                    justify-content: center;
-                    position: relative;
-                    top: 15%;
-                    
+                .boximg {
+                    margin-left: 30%;
+                    margin-top: 7%;
                 }
 
                 a {
@@ -106,9 +101,16 @@
                     font-size: 14px;
                     line-height: 22px;
                     color: #00DC81;
-                    position: relative;
-                    top: 30%;
-                    left: 60%;
+                    position: fixed;
+                    top: 22.5%;
+                }
+
+                .showmoreone {
+                    left: 22%;
+                }
+
+                .showmoretwo {
+                    left: 43%;
                 }
             }
         }
@@ -135,11 +137,11 @@
                 color: #00DC81;
                 margin-top: 21%;
                 position: relative;
-                left: -29%;
+                left: -25%;
             }
 
             .box {
-                width: 304px;
+                width: 204px;
                 height: 143px;
                 display: inline;
 
@@ -164,6 +166,10 @@
                     justify-content: center;
                     position: relative;
 
+                    img {
+                        margin-right: 10px;
+                    }
+
                 }
             }
         }
@@ -179,42 +185,31 @@
                 li {
                     display: flex;
 
-                    div {
-                        .dot {
-                            height: 20px;
-                            width: 20px;
-                            border-radius: 50%;
-                            border: 1.5px solid #E3E3E3;
-                            display: inline-block;
-                            position: relative;
-                            margin-left: 10px;
 
-                            .arrow {
-                                border: solid #FBFBFB;
-                                border-width: 0 1.5px 1.5px 0;
-                                display: inline-block;
-                                position: absolute;
-                                padding: 2px;
-                                transform: rotate(45deg);
-                                -webkit-transform: rotate(45deg);
-                                top: 25%;
-                                left: 35%;
-                            }
+                    .dot {
+                        height: 20px;
+                        width: 20px;
+                        border-radius: 50%;
+                        border: 1.5px solid #E3E3E3;
+                        display: inline-block;
+                        position: relative;
+                        margin-left: 10px;
 
 
-                        }
 
-                        .dot:hover {
-                            .arrow:hover {
-                                border: solid #00DB7B;
-                                border-width: 0 1.5px 1.5px 0;
-                                display: inline-block;
-                                padding: 2px;
-                                transform: rotate(-135deg);
-                                top: 40%;
 
-                            }
-                        }
+                    }
+
+                    .arrow {
+                        border: solid #FBFBFB;
+                        border-width: 0 1.5px 1.5px 0;
+                        display: inline-block;
+                        position: absolute;
+                        padding: 2px;
+                        transform: rotate(45deg);
+                        -webkit-transform: rotate(45deg);
+                        top: 30%;
+                        left: 35%;
                     }
 
                     a {
@@ -228,6 +223,22 @@
 
                     }
                 }
+            }
+
+            .hoverEvent:hover a {
+                color: #00DB7B;
+            }
+
+            .hoverEvent:hover div div .dot .arrow {
+                border: solid #00DB7B;
+                border-width: 0 1.5px 1.5px 0;
+                display: inline-block;
+                position: absolute;
+                padding: 2px;
+                transform: rotate(45deg);
+                -webkit-transform: rotate(225deg);
+                top: 40%;
+                left: 35%;
             }
         }
     }
