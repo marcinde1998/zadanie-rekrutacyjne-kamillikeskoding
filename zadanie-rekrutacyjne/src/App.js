@@ -5,6 +5,7 @@ function App() {
   return (
     <div className="app">
      <AppNav />
+     <AppNav />
      <AppRoutes />
     </div>
   );
