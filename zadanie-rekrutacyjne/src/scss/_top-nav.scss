@@ -1,0 +1,33 @@
+.topNav {
+    .navBarPortfolio {
+        background: linear-gradient(89.82deg, #1D4534 42.15%, #01DD81 100.83%);
+        transform: rotate(-180deg);
+        height: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ul {
+            margin: auto;
+            list-style-type: none;
+
+            li {
+                transform: rotate(180deg);
+
+                a {
+                    text-decoration: none;
+                    font-family: 'sofia-pro';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #DFDFDE;
+
+                    span {
+                        color: #00DC81;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,28 +1,20 @@
 @import url("https://p.typekit.net/p.css?s=1&k=gze2nel&ht=tk&f=24543.24545.24549&a=38439520&app=typekit&e=css");
-.mainNav {
-  border-bottom: 1px solid #3B3F3D;
-}
-.mainNav .navBarPortfolio {
-  font-size: 0;
+.topNav .navBarPortfolio {
   background: linear-gradient(89.82deg, #1D4534 42.15%, #01DD81 100.83%);
   transform: rotate(-180deg);
-  position: relative;
-  text-align: center;
   height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.mainNav .navBarPortfolio ul {
-  margin: 0;
+.topNav .navBarPortfolio ul {
+  margin: auto;
   list-style-type: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
 }
-.mainNav .navBarPortfolio ul li {
+.topNav .navBarPortfolio ul li {
   transform: rotate(180deg);
 }
-.mainNav .navBarPortfolio ul li a {
+.topNav .navBarPortfolio ul li a {
   text-decoration: none;
   font-family: "sofia-pro";
   font-style: normal;
@@ -31,160 +23,31 @@
   line-height: 22px;
   color: #DFDFDE;
 }
-.mainNav .navBarPortfolio ul li a span {
+.topNav .navBarPortfolio ul li a span {
   color: #00DC81;
+}
+
+.mainNav {
+  border-bottom: 1px solid #3B3F3D;
+  height: 96px;
 }
 .mainNav .navBar {
   display: flex;
-  width: 500px;
+  width: 600px;
+  height: 96px;
   margin-left: 10%;
+}
+.mainNav .navBar .nav-list {
+  display: flex;
   height: 96px;
 }
-.mainNav .navBar div .clickedEvent:active {
-  background-color: #00DB7B;
-}
-.mainNav .navBar .fixedPortfolio {
-  position: fixed;
-  width: 855px;
-  height: 271px;
-  background-color: #DFDFDE;
-  top: 10%;
-  left: 10%;
-  background: #292A2A;
-  box-shadow: 0px 2px 12px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-}
-.mainNav .navBar .fixedPortfolio .boxtext3 {
-  text-decoration: none;
-  font-family: "sofia-pro";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 22px;
-  color: #00DC81;
-  margin-top: 22%;
-}
-.mainNav .navBar .fixedPortfolio .box {
-  width: 304px;
-  height: 143px;
-  display: inline;
-  border: 1px solid #3B3F3D;
-  border-radius: 8px;
-}
-.mainNav .navBar .fixedPortfolio .box .boxtext1 {
-  font-family: "sofia-pro";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 19px;
-  color: #9C9C9C;
-  margin-left: 20px;
-  margin-top: 20px;
-}
-.mainNav .navBar .fixedPortfolio .box .boximg {
-  margin-left: 30%;
-  margin-top: 7%;
-}
-.mainNav .navBar .fixedPortfolio .box a {
-  text-decoration: none;
-  font-family: "sofia-pro";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 22px;
-  color: #00DC81;
-  position: fixed;
-  top: 22.5%;
-}
-.mainNav .navBar .fixedPortfolio .box .showmoreone {
-  left: 22%;
-}
-.mainNav .navBar .fixedPortfolio .box .showmoretwo {
-  left: 43%;
-}
-.mainNav .navBar .fixedServices {
-  position: fixed;
-  width: 855px;
-  height: 271px;
-  background-color: #DFDFDE;
-  top: 10%;
-  left: 10%;
-  background: #292A2A;
-  box-shadow: 0px 2px 12px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-}
-.mainNav .navBar .fixedServices .boxtext3 {
-  text-decoration: none;
-  font-family: "sofia-pro";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 22px;
-  color: #00DC81;
-  margin-top: 21%;
-  position: relative;
-  left: -25%;
-}
-.mainNav .navBar .fixedServices .box {
-  width: 204px;
-  height: 143px;
-  display: inline;
-}
-.mainNav .navBar .fixedServices .box .boxtext1 {
-  font-family: "sofia-pro";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 19px;
-  color: #9C9C9C;
-  margin-left: 20px;
-  margin-top: 5px;
-}
-.mainNav .navBar .fixedServices .box .boxtext2 {
-  font-family: "sofia-pro";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: #FFFFFF;
+.mainNav .navBar .nav-list li {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  position: relative;
+  width: 150px;
 }
-.mainNav .navBar .fixedServices .box .boxtext2 img {
-  margin-right: 10px;
-}
-.mainNav .navBar div {
-  display: flex;
-  margin: auto;
-}
-.mainNav .navBar div ul {
-  margin: auto;
-  list-style-type: none;
-}
-.mainNav .navBar div ul li {
-  display: flex;
-}
-.mainNav .navBar div ul li .dot {
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  border: 1.5px solid #E3E3E3;
-  display: inline-block;
-  position: relative;
-  margin-left: 10px;
-}
-.mainNav .navBar div ul li .arrow {
-  border: solid #FBFBFB;
-  border-width: 0 1.5px 1.5px 0;
-  display: inline-block;
-  position: absolute;
-  padding: 2px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  top: 30%;
-  left: 35%;
-}
-.mainNav .navBar div ul li a {
+.mainNav .navBar .nav-list li a {
   text-decoration: none;
   font-family: "sofia-pro";
   font-style: normal;
@@ -193,19 +56,140 @@
   line-height: 25px;
   color: #FBFBFB;
 }
-.mainNav .navBar div .hoverEvent:hover a {
-  color: #00DB7B;
+.mainNav .navBar .nav-list li .dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #E3E3E3;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
 }
-.mainNav .navBar div .hoverEvent:hover div div .dot .arrow {
-  border: solid #00DB7B;
+.mainNav .navBar .nav-list li .dot .arrow {
+  border: solid #FBFBFB;
   border-width: 0 1.5px 1.5px 0;
   display: inline-block;
+  padding: 2px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
   position: absolute;
+  top: 90.5px;
+}
+.mainNav .navBar .nav-list li .buttonPortfolio {
+  border: none;
+  background: none;
+  padding: 0;
+  font-family: "sofia-pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: #FBFBFB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainNav .navBar .nav-list li .buttonPortfolio .dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #E3E3E3;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+.mainNav .navBar .nav-list li .buttonPortfolio .dot .arrow {
+  border: solid #FBFBFB;
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
+  padding: 2px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: absolute;
+  top: 90.5px;
+}
+.mainNav .navBar .nav-list .home-link {
+  width: 130px;
+}
+.mainNav .navBar .nav-list .home-logo {
+  width: 130px;
+}
+.mainNav .navBar .nav-list .clickedEvent .portfolio-container {
+  position: fixed;
+  width: 855px;
+  height: 271px;
+  border-radius: 12px;
+  top: 120px;
+  left: 15%;
+  box-shadow: 0px 2px 12px 5px rgba(0, 0, 0, 0.1);
+  background: #292A2A;
+  display: flex;
+  align-items: center;
+}
+.mainNav .navBar .nav-list .clickedEvent .portfolio-container .fixed-portfolio {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  list-style: none;
+  padding: 0;
+}
+.mainNav .navBar .nav-list .clickedEvent .portfolio-container .fixed-portfolio .view-all {
+  align-self: flex-end;
+  font-family: "sofia-pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+  color: #00DC81;
+}
+.mainNav .navBar .nav-list .clickedEvent .portfolio-container .fixed-portfolio .box {
+  display: flex;
+  flex-direction: column;
+  width: 304px;
+  height: 143px;
+  border: 1px solid #3B3F3D;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 20px;
+}
+.mainNav .navBar .nav-list .clickedEvent .portfolio-container .fixed-portfolio .box .tittle {
+  align-self: flex-start;
+  font-family: "sofia-pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: #9C9C9C;
+  margin-bottom: 20px;
+}
+.mainNav .navBar .nav-list .clickedEvent .portfolio-container .fixed-portfolio .box .boximg {
+  align-self: center;
+}
+.mainNav .navBar .nav-list .clickedEvent .portfolio-container .fixed-portfolio .box .link-content {
+  margin-top: 20px;
+  align-self: flex-end;
+  font-family: "sofia-pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #00DC81;
+}
+.mainNav .navBar .nav-list .clickedEvent button.clicked {
+  color: #00DB7B;
+}
+.mainNav .navBar .nav-list .clickedEvent button.clicked .dot .arrow {
+  border-color: #00DB7B;
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
   padding: 2px;
   transform: rotate(45deg);
   -webkit-transform: rotate(225deg);
-  top: 40%;
-  left: 35%;
+  position: absolute;
+  top: 92px;
 }
 
 body {
