@@ -47,7 +47,7 @@
   justify-content: center;
   width: 150px;
 }
-.mainNav .navBar .nav-list li a {
+.mainNav .navBar .nav-list li .menu-link {
   text-decoration: none;
   font-family: "sofia-pro";
   font-style: normal;
@@ -116,7 +116,7 @@
 .mainNav .navBar .nav-list .home-logo {
   width: 130px;
 }
-.mainNav .navBar .nav-list .clickedEvent .portfolio-container {
+.mainNav .navBar .nav-list .portfolio-menu .portfolio-container {
   position: fixed;
   width: 855px;
   height: 271px;
@@ -128,14 +128,14 @@
   display: flex;
   align-items: center;
 }
-.mainNav .navBar .nav-list .clickedEvent .portfolio-container .fixed-portfolio {
+.mainNav .navBar .nav-list .portfolio-menu .portfolio-container .fixed-portfolio {
   display: flex;
   align-items: center;
   margin: auto;
   list-style: none;
   padding: 0;
 }
-.mainNav .navBar .nav-list .clickedEvent .portfolio-container .fixed-portfolio .view-all {
+.mainNav .navBar .nav-list .portfolio-menu .portfolio-container .fixed-portfolio .view-all {
   align-self: flex-end;
   font-family: "sofia-pro";
   font-style: normal;
@@ -145,7 +145,7 @@
   margin-bottom: 20px;
   color: #00DC81;
 }
-.mainNav .navBar .nav-list .clickedEvent .portfolio-container .fixed-portfolio .box {
+.mainNav .navBar .nav-list .portfolio-menu .portfolio-container .fixed-portfolio .box {
   display: flex;
   flex-direction: column;
   width: 304px;
@@ -155,7 +155,20 @@
   margin: 20px;
   padding: 20px;
 }
-.mainNav .navBar .nav-list .clickedEvent .portfolio-container .fixed-portfolio .box .tittle {
+.mainNav .navBar .nav-list .portfolio-menu .portfolio-container .fixed-portfolio .box .link-content {
+  text-decoration: none;
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  text-align: right;
+  font-family: "sofia-pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #00DC81;
+}
+.mainNav .navBar .nav-list .portfolio-menu .portfolio-container .fixed-portfolio .box .tittle {
   align-self: flex-start;
   font-family: "sofia-pro";
   font-style: normal;
@@ -165,10 +178,10 @@
   color: #9C9C9C;
   margin-bottom: 20px;
 }
-.mainNav .navBar .nav-list .clickedEvent .portfolio-container .fixed-portfolio .box .boximg {
+.mainNav .navBar .nav-list .portfolio-menu .portfolio-container .fixed-portfolio .box .boximg {
   align-self: center;
 }
-.mainNav .navBar .nav-list .clickedEvent .portfolio-container .fixed-portfolio .box .link-content {
+.mainNav .navBar .nav-list .portfolio-menu .portfolio-container .fixed-portfolio .box .link-content {
   margin-top: 20px;
   align-self: flex-end;
   font-family: "sofia-pro";
@@ -178,10 +191,10 @@
   line-height: 22px;
   color: #00DC81;
 }
-.mainNav .navBar .nav-list .clickedEvent button.clicked {
+.mainNav .navBar .nav-list .portfolio-menu .buttonPortfolio.clicked {
   color: #00DB7B;
 }
-.mainNav .navBar .nav-list .clickedEvent button.clicked .dot .arrow {
+.mainNav .navBar .nav-list .portfolio-menu .buttonPortfolio.clicked .dot .arrow {
   border-color: #00DB7B;
   border-width: 0 1.5px 1.5px 0;
   display: inline-block;
@@ -190,6 +203,124 @@
   -webkit-transform: rotate(225deg);
   position: absolute;
   top: 92px;
+}
+.mainNav .navBar .nav-list .services-menu:hover .menu-link {
+  color: #00DB7B;
+}
+.mainNav .navBar .nav-list .services-menu:hover .dot .arrow {
+  border-color: #00DB7B;
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
+  padding: 2px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(225deg);
+  position: absolute;
+  top: 92px;
+}
+.mainNav .navBar .nav-list .services-menu .fixed-services {
+  position: absolute;
+  width: 855px;
+  height: 271px;
+  border-radius: 12px;
+  top: 120px;
+  left: 15%;
+  box-shadow: 0px 2px 12px 5px rgba(0, 0, 0, 0.1);
+  background: #292A2A;
+}
+.mainNav .navBar .nav-list .services-menu .fixed-services .view-all-link {
+  text-decoration: none;
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: 25%;
+  text-align: right;
+  font-family: "sofia-pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #00DC81;
+}
+.mainNav .navBar .nav-list .services-menu .fixed-services .huge-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mainNav .navBar .nav-list .services-menu .fixed-services .huge-box .small-box {
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+.mainNav .navBar .nav-list .services-menu .fixed-services .huge-box .small-box .tittle {
+  font-family: "sofia-pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FBFBFB;
+}
+.mainNav .navBar .nav-list .services-menu .fixed-services .huge-box .small-box .tittle img {
+  margin-right: 10px;
+}
+.mainNav .navBar .nav-list .services-menu .fixed-services .huge-box .small-box .paragraph {
+  font-family: "sofia-pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #9C9C9C;
+}
+
+#tabs .tabs {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+#tabs .tabs .tabs-box {
+  width: 407px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#tabs .tabs .tabs-box div {
+  display: flex;
+  align-items: center;
+}
+#tabs .tabs .tabs-box div .tittle {
+  font-family: "sofia-pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FBFBFB;
+  display: inline-flex;
+  align-items: center;
+}
+#tabs .tabs .tabs-box div .dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #E3E3E3;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+#tabs .tabs .tabs-box div .dot .arrow {
+  border: solid #FBFBFB;
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
+  padding: 2px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  top: 90.5px;
+}
+#tabs .tabs .tabs-box .content {
+  margin-top: 10px;
 }
 
 body {

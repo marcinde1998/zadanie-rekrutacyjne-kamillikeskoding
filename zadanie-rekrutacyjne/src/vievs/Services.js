@@ -1,7 +1,9 @@
+import SectionTabs from "../segments/SectionTabs";
+
 function Services() {
     return (
         <div>
-            <h1>Services</h1>
+            <SectionTabs />
         </div>
     );
 }

@@ -18,8 +18,7 @@
                 justify-content: center;
                 width: 150px;
 
-
-                a {
+                .menu-link {
                     text-decoration: none;
                     font-family: 'sofia-pro';
                     font-style: normal;
@@ -27,8 +26,6 @@
                     font-size: 16px;
                     line-height: 25px;
                     color: #FBFBFB;
-
-
                 }
 
                 .dot {
@@ -52,7 +49,6 @@
                         top: 90.5px;
                     }
                 }
-
 
                 .buttonPortfolio {
                     border: none;
@@ -100,8 +96,7 @@
                 width: 130px;
             }
 
-
-            .clickedEvent {
+            .portfolio-menu {
                 .portfolio-container {
                     position: fixed;
                     width: 855px;
@@ -142,7 +137,19 @@
                             margin: 20px;
                             padding: 20px;
 
-
+                            .link-content {
+                                text-decoration: none;
+                                display: block;
+                                margin-top: 30px;
+                                margin-left: auto;
+                                text-align: right;
+                                font-family: 'sofia-pro';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 22px;
+                                color: #00DC81;
+                            }
 
                             .tittle {
                                 align-self: flex-start;
@@ -173,7 +180,7 @@
                     }
                 }
 
-                button.clicked {
+                .buttonPortfolio.clicked {
                     color: #00DB7B;
 
                     .dot .arrow {
@@ -185,6 +192,92 @@
                         -webkit-transform: rotate(225deg);
                         position: absolute;
                         top: 92px;
+                    }
+                }
+            }
+
+            .services-menu:hover {
+                .menu-link {
+                    color: #00DB7B;
+                }
+
+                .dot {
+                    .arrow {
+                        border-color: #00DB7B;
+                        border-width: 0 1.5px 1.5px 0;
+                        display: inline-block;
+                        padding: 2px;
+                        transform: rotate(45deg);
+                        -webkit-transform: rotate(225deg);
+                        position: absolute;
+                        top: 92px;
+                    }
+                }
+            }
+
+            .services-menu {
+                .fixed-services {
+                    position: absolute;
+                    width: 855px;
+                    height: 271px;
+                    border-radius: 12px;
+                    top: 120px;
+                    left: 15%;
+                    box-shadow: 0px 2px 12px 5px rgba(0, 0, 0, 0.1);
+                    background: #292A2A;
+
+                    .view-all-link {
+                        text-decoration: none;
+                        display: block;
+                        margin-top: 30px;
+                        margin-left: auto;
+                        margin-right: 25%;
+                        text-align: right;
+                        font-family: 'sofia-pro';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #00DC81;
+                    }
+
+                    .huge-box {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+
+                        .small-box {
+                            width: 30%;
+                            padding: 20px;
+                            box-sizing: border-box;
+                            margin-top: 40px;
+
+
+                            .tittle {
+                                font-family: 'sofia-pro';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 22px;
+                                color: #FBFBFB;
+
+                                img {
+                                    margin-right: 10px;
+                                }
+                            }
+
+                            .paragraph {
+                                font-family: 'sofia-pro';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 18px;
+                                color: #9C9C9C;
+                            }
+
+
+                        }
                     }
                 }
             }

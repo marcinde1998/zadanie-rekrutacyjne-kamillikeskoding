@@ -3,9 +3,7 @@ import { Link } from "react-router-dom";
 import logolikescoding from "../images/logolikescoding.svg"
 import ecoprintlogo from "../images/ecoprintlogo.png"
 import likescodinglogo from "../images/likescodinglogo.png"
-import iconnavuxdesign from "../images/iconnavuxdesign.png"
-import iconservicegraphicdesign1 from "../images/iconservicegraphicdesign1.png"
-import iconserviceecommerce1 from "../images/iconserviceecommerce1.png"
+import MenuServices from "../segments/MenuServices";
 
 const AppNav = () => {
     const [isHovering, setIsHovering] = useState(false);
@@ -40,34 +38,21 @@ const AppNav = () => {
                         <img src={logolikescoding} alt="logo-likescoding"></img>
                     </li>
                     <li className="home-link">
-                        <Link to="/">Home</Link>
+                        <Link className="menu-link" to="/">Home</Link>
                     </li>
-                    <li className="hoverEvent">
-                        <Link to="/services" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>Services</Link>
+                    <li className="services-menu" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+                        <Link className="menu-link" to="/services" >Services</Link>
                         <span className="dot"><i className="arrow"></i></span>
                         <div>
                             {isHovering && (
-                                <div className="fixedServices">
-                                    <div className="box">
-                                        <div className="boxtext2"><img src={iconnavuxdesign} alt="iconnavuxdesign"></img>UX Design</div>
-                                        <div className="boxtext1">Contrary to popular belief, Lorem Ipsum is not simply random text.</div>
-                                    </div>
-                                    <div className="box">
-                                        <div className="boxtext2"><img src={iconservicegraphicdesign1} alt="iconservicegraphicdesign1"></img>Graphic Design</div>
-                                        <div className="boxtext1">Contrary to popular belief, Lorem Ipsum is not simply random text.</div>
-                                    </div>
-                                    <div className="box">
-                                        <div className="boxtext2"><img src={iconserviceecommerce1} alt="iconserviceecommerce1"></img>Ecommerce</div>
-                                        <div className="boxtext1">Contrary to popular belief, Lorem Ipsum is not simply random text.</div>
-                                    </div>
-                                    <Link className="boxtext3" to="/services">View all <span>&#129122;</span></Link>
-                                </div>
+                                <MenuServices />
                             )}
                         </div>
                     </li>
-                    <li className="clickedEvent">
+
+                    <li className="portfolio-menu" onClick={handleToggleMenu} onBlur={handleCloseMenu}>
                         <button className={`buttonPortfolio ${clicked ? 'clicked' : ''}`}
-                            onClick={handleToggleMenu} onBlur={handleCloseMenu}>Portfolio
+                            >Portfolio
                             <span className="dot"><i className="arrow"></i></span>
                         </button>
 
@@ -84,7 +69,7 @@ const AppNav = () => {
                                         <img className="boximg" src={likescodinglogo} alt="likescodinglogo"></img>
                                         <Link className="link-content">Show more <span>&#129122;</span></Link>
                                     </li>
-                                    <Link className="view-all">View all <span>&#129122;</span></Link>
+                                    <Link className="view-all" to="/portfolio">View all <span>&#129122;</span></Link>
                                 </ul>
                             </div>)}
 
